@@ -8,7 +8,7 @@ class Main {
 
   // Returns the kth percentile for the responses.
   public int getPercentile(int k) {
-    double index = k * .1 * NO_OF_TIMES;
+    double index = NO_OF_TIMES * k /100;
     index = Math.abs(index);
     return (int)index - 1;
   }
